@@ -68,7 +68,7 @@ mít po celou dobu hry k dispozici, aby se podle ní daly vypočítat
 souřadnice k vykreslení obrázků. Pro začátek řekněme, že ideální velikost
 takového čtverce bude 64×64 pixelů.
 
-Z velikosti takového čtverce, kterou si můžeme v budoucnu libovolně změnit,
+Z velikosti čtverce, kterou si můžeme v budoucnu libovolně změnit,
 a velikosti okna aplikace můžeme vypočítat, kolik se nám do okna takových
 čtverců vejde na šířku a na výšku a tím i zjistit, kolik pomyslných
 sloupců a řádků bude naše hrací plocha mít.
@@ -76,14 +76,15 @@ sloupců a řádků bude naše hrací plocha mít.
 ## Vykreslení hada
 
 Abychom mohli hada vykreslit, potřebujeme si pro začátek uložit jeho souřadnice.
-K tomu můžeš použít seznam dvojic - stejně jako v domácím projektu. Pokud chceš,
-můžeš si pro hada vytvořit i vlastní třídu, kde bude seznam souřadnic jako jeden
-z atributů.
+K tomu můžeš použít seznam dvojic - stejně jako v domácím projektu. Podobných
+informací, které se budou v průběhu hry dynamicky měnit, budeme mít už
+za malou chvíli více. Proto dává smysl si pro stav hry vytvořit třídu, která
+bude tyto informace obsahovat jako atributy a bude s nimi umět pracovat.
 
 > [note]
-> Záleží jen na tobě, jak moc budeš chtít hada rozšiřovat. I když se totiž může
-> na začátku zdát vlastní třída jako zbytečná komplikace, později může přispět
-> k přehlednějšímu kódu a snazšímu rozšíření třeba o další hady.
+> I když se může na začátku zdát vlastní třída jako zbytečná
+> komplikace, později zjistíš, že ne všechno by se dalo snadno udržovat v globálních
+> proměnných.
 
 {{ figure(
     img=static('coords.svg'),
@@ -98,13 +99,13 @@ do složky k programu.
 Stejně jako na lekci i zde použijeme pro vykreslení `Sprite`, kterému už při
 vytvoření můžeme zadat obrázek pro vykreslení a vypočtené souřadnice.
 Pro jednoduchost stačí `Sprite` vytvořit, vykreslit a „zapomenout“. Není to ale
-optimální přístup a tak tohle může být jedním z adeptů pro pozdější optimalizaci.
+optimální přístup a tak tohle může být jedním z adeptů pro pozdější vylepšení.
 
 ## Rozpohybování hada
 
 Aby se mohl had hýbat, potřebuje znát směr pohybu. V příkazové řádce jsme
 vždy počkali, až nám směr zadá uživatel, ale v opravdové hře se bude had
-pohybovat sám. Bude tedy potřeba nějaká proměnná či atribut, kde bude směr
+pohybovat sám. Bude tedy potřeba nějaký atribut v naší třídě, kde bude směr
 neustále uložen a měnit se bude podle stisknutých kláves v dalším kroku.
 
 Směr pohybu může být uložen v libovolné podobě - světové strany, slovní
@@ -117,7 +118,7 @@ nebo metodu, která s hadem pohne. Pohyb bude probíhat
 naprosto stejně jako v příkazové řádce - přidáme do seznamu souřadnice,
 kde by měla být „nová hlava“ a umažeme poslední kousek hada.
 
-Protože se pohyb má provádět pravidelně, bude potřeba tuto novou funkci volat
+Protože se pohyb má provádět pravidelně, bude potřeba tuto operaci provádět
 automaticky v pravidelných intervalech. `pyglet.clock.schedule_interval` je
 zde jasná volba.
 
@@ -159,9 +160,10 @@ kdy had narazí sám do sebe.
 Jezdit s hadem po hrací ploše může být chvíli zábava, ale protože had neroste,
 není to žádná výzva. A aby mohl růst, potřebuje jíst.
 
-K tomu budeš potřebovat další globální seznam či atribut, který bude obsahovat
-informace (souřadnice) o existujícím jídle na hrací ploše. Navíc bude potřeba mít
-k dispozici funkci nebo metodu, která bude umět jídlo na hrací plochu přidat.
+K tomu budeš potřebovat další globálně dostupný seznam (nejlépe atribut
+existující třídy), který bude obsahovat informace (souřadnice) o existujícím
+jídle na hrací ploše. Navíc bude potřeba mít k dispozici metodu, která bude
+umět jídlo na hrací plochu přidat.
 
 Záleží jen na tobě, zda se bude nové jídlo objevovat, když had jedno
 z existujících sni, nebo automaticky v pravidelných intervalech.
