@@ -41,7 +41,7 @@ Jak postupovat, aby se projekt nezdál nedosažitelný už na začátku? Třeba 
 0. Promysli si, jak bude hra fungovat a jak přeneseme mřížku s hadem
 z příkazové řádky do grafického okna.
 1. Vykresli hada do grafického okna (ve formě barevných čtverců)
-2. Přidej funkci, která bude s hadem hýbat.
+2. Přidej funkci, která bude hadem hýbat.
 3. Umožni změnit směr hada pomocí klávesnice.
 4. Nenech hada utéct z herní plochy a nabourat do sebe sama.
 5. Přidej hadovi jídlo a zajisti, aby po jídle rostl.
@@ -114,7 +114,7 @@ označení strany, nebo třeba dvojice s číselným označením pohybu
 formátu pak bude třeba směr zpracovat.
 
 Pro tuhle chvíli mu tedy bude stačit nastavit směr napevno a napsat funkci,
-nebo metodu, která s hadem pohne. Pohyb bude probíhat
+nebo metodu, která hadem pohne. Pohyb bude probíhat
 naprosto stejně jako v příkazové řádce – přidáme do seznamu souřadnice,
 kde by měla být „nová hlava“ a umažeme poslední kousek hada.
 
@@ -207,10 +207,10 @@ Třída `Path` má metodu `glob()`, která nám ze zadané cesty umí vrátit se
 s názvy souborů dle argumentem zadaných kritérií. My potřebujeme všechny soubory
 s příponou `.png` bez ohledu na jméno. Jakýkoli řetězec je v regulárních
 výrazech označen hvězdičkou (`*`), takže argument pro metodu `glob()` bude
-`for` a každý obrázek si načíst do slovníku, kde hodnotou bude samotný obrázek
 `*.png`, což označuje jakýkoli soubor s příponou `.png`. Jako výsledek
 dostaneme sekvenci cest k souborům s obrázky, kterou můžeme projít pomocí cyklu
-`pyglet.image` a klíčem jeho název. Z názvu však potřebujeme jen název souboru
+`for`, a každý obrázek si můžeme načíst do slovníku, kde hodnotou bude samotný obrázek
+`pyglet.image` a klíčem jeho název. Z názvu však potřebujeme jen samotný název souboru
 bez přípony a názvu složky – ten je uložen v atributu `stem`.
 
 Výsledný slovník by měl vypadat takto:
@@ -274,7 +274,7 @@ Jak vybrat správné obrázky na ta správná místa? Jména obrázků (klíče 
 obsahují informaci, odkud kam daný obrázek vede. Stačí se tedy při
 vykreslování každého kousku hada podívat na umístění jednoho před ním
 a jednoho za ním a podle toho vybrat ze slovníku ten správný obrázek.
-U každého kousku hada, kousku před i za ním tě budou zajímat jejich
+U každého kousku hada a kousku před i za ním tě budou zajímat jejich
 souřadnice, protože podle nich lze velmi snadno poznat, zda je zkoumaný kousek
 nalevo, napravo, nahoře, nebo dole.
 
