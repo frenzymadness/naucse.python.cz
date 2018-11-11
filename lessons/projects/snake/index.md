@@ -1,6 +1,6 @@
 # Hra typu Had
 
-Dnes to všechno — třídy, grafiku, seznamy, a tak dále –
+Dnes to všechno — třídy, grafiku, seznamy a tak dále –
 spojíme dohromady do závěrečného projektu.
 Doufám, že se ti bude líbit!
 
@@ -48,11 +48,11 @@ z příkazové řádky do grafického okna.
 6. Vyměň barevné čtverečky za opravdovou grafiku.
 
 Po těchto krocích budeš mít základní hru, ale tou to nekončí, právě naopak!
-Budeš mít vlastní hru jejímuž fungování rozumíš jako nikdo jiný a to je to pravé pro
+Budeš mít vlastní hru, jejímuž fungování rozumíš jako nikdo jiný, a to je to pravé pro
 přidávání dalších možností. Fantazii se meze nekladou. Například:
 
-jinými klávesami navzájem soupeřící o jídlo.
 1. Ve hře mohou být dva nebo třeba tři hadi najednou – každý ovládaný
+jinými klávesami — navzájem soupeřící o jídlo.
 2. Kromě jídla se mohou na ploše objevovat i jiné objekty – překážky,
 do kterých nesmí had narazit, otrávené jídlo, které hada zkrátí atp.
 3. Hrací plocha může být nekonečná a když z ní had vyleze, objeví se
@@ -271,7 +271,7 @@ správný obrázek na tom správném místě.
 Bod č. 2 je v tuto chvíli snazší a tak budeme pokračovat tímto způsobem.
 
 Jak vybrat správné obrázky na ta správná místa? Jména obrázků (klíče ve slovníku)
-obsahují informaci, odkud - kam daný obrázek vede. Stačí se tedy při
+obsahují informaci, odkud kam daný obrázek vede. Stačí se tedy při
 vykreslování každého kousku hada podívat na umístění jednoho před ním
 a jednoho za ním a podle toho vybrat ze slovníku ten správný obrázek.
 U každého kousku hada, kousku před i za ním tě budou zajímat jejich
