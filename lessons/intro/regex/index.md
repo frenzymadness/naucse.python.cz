@@ -20,7 +20,7 @@ Regulární výrazy se při práci s textem nejčastěji používají v těchto 
 
 ## Zápis regulárních výrazů
 
-Regulární výrazy v Pythonu se zapisují do tzv. raw stringu `r""`, který zajistí, že speciální sekvence jako např. `\n` nebudou mít svůj speciální význam.
+Regulární výrazy se v Pythonu zapisují do tzv. raw stringu `r""`, který zajistí, že speciální sekvence jako např. `\n` nebudou mít svůj speciální význam.
 
 ```pycon
 >>> print("hello\nworld")
