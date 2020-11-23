@@ -106,7 +106,7 @@ pomocí `\cislo` bez nutnosti se opakovat.
 Například zápisu `(a{3}) \1` odpovídá jen jeden řetězec `aaa aaa`, protože `\1` je odkaz na skupinu se třemi výskyty znaku "a".
 
 Snad posledním znakem často používaným v kombinaci se skupinou v kulatých závorkách je `|` (svislá čára). Ta
-umožňuje od sebe oddělit několik regulárních výrazů, přičemž může platit kterýkoli z nich.
+umožňuje od sebe oddělit několik regulárních výrazů nebo jejich částí, přičemž může platit kterýkoli z nich.
 
 Například zápisu `aaa|bbb` odpovídají řetězce `aaa` nebo `bbb`. Složitějšímu zápisu `([ab]{2}|z)k` odpovídají buď
 dva znaky z výčtu `[ab]` následované znakem `k` nebo znak `z` následovaný znakem `k` — celkový výčet je tedy následující
