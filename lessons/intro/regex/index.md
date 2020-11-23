@@ -150,7 +150,8 @@ ze tří malých písmen bez diakritiky a dvou až čtyř číslic. Jeho validac
 
 Na příkladu je vidět, že pokud `match` najde shodu, vrátí speciální objekt, v opačném případě vrátí `None`.
 `Match` objekt má spoustu užitečných metod, které umožňují pracovat s nalezenou shodou. Mimo jiné můžeme s jeho pomocí získat
-jednotlivé skupiny označené v regulárním výrazu kulatými závorkami.
+jednotlivé skupiny označené v regulárním výrazu kulatými závorkami metodou `groups`, metodami `start` a `end` získat indexy
+prvního a posledního znaku shody či metodou `span` oba indexy najednou.
 
 ```pycon
 >>> match = re.match(r"([a-z]{3})([0-9]{2,4})", "cap0096")
