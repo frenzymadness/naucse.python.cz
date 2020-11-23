@@ -10,7 +10,7 @@ r"^\w+([\.-]?\w)+@\w+([\.]?\w)+(\.[a-zA-Z]{2,3})+$"
 
 Regulární výraz (*regular expression*, *regex* či *regexp*) je řetězec, který s pomocí znaků se speciálním významem definuje vzor pro vyhledávání v textu.
 
-Obecně řečeno pochází regulární výrazy z oblasti teoretické informatiky a teorie formálních jazyků. Teorie a formální definice jsou k nalezení na [české](https://cs.wikipedia.org/wiki/Regul%C3%A1rn%C3%AD_v%C3%BDraz#Form%C3%A1ln%C3%AD_definice) i [anglické wikipedii](https://en.wikipedia.org/wiki/Regular_expression#Formal_language_theory) a obsahují spoustu odkazu pro zvídavé. Je to zajímavé a velmi obsáhlé téma.
+Obecně řečeno pochází regulární výrazy z oblasti teoretické informatiky a teorie formálních jazyků. Teorie a formální definice jsou k nalezení na [české](https://cs.wikipedia.org/wiki/Regul%C3%A1rn%C3%AD_v%C3%BDraz#Form%C3%A1ln%C3%AD_definice) i [anglické Wikipedii](https://en.wikipedia.org/wiki/Regular_expression#Formal_language_theory) a obsahují spoustu odkazů pro zvídavé. Je to zajímavé a velmi obsáhlé téma.
 
 Regulární výrazy se při práci s textem nejčastěji používají v těchto případech:
 * zjištění, zda nějaký text vyhovuje regulárnímu výrazu (validace vstupů)
