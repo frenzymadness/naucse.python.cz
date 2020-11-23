@@ -255,7 +255,7 @@ Vezmeme to postupně:
 * `^` označení začátku hledaného řetězce
 * `\w+` 1 nebo více alfanumerických znaků
 * `([\.-]?\w)+` skupina alfanumerických znaků, která může začínat tečkou nebo spojovníkem a může se jednou nebo vícekrát opakovat
-* @ znak zavináče — nemá žádný speciální význam
+* `@` znak zavináče — nemá žádný speciální význam
 * `\w+` 1 nebo více alfanumerických znaků
 * `([\.]?\w)+` skupina alfanumerických znaků, která může začínat tečkou a může se jednou nebo vícekrát opakovat
 * `(\.[a-zA-Z]{2,3})+` skupina obsahující dvě nebo tři malá/velká písmena anglické abecedy nebo číslice, která musí začínat tečkou a může se jednou nebo vícekrát opakovat
