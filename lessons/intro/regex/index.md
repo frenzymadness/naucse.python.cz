@@ -95,8 +95,8 @@ Skupiny znaků v regulárních výrazech lze zadat několika způsoby:
   * `\w` označuje všechny alfanumerické znaky a podtržítko – ekvivalent s `[a-zA-Z0-9_]`
   * `\W` označuje vše kromě znaků z `\w` (množina obsahující všechny znaky kromě těch z předchozí skupiny)
 
-Pokud je v hranatých závorkách jako první znak `^`, znamená to doplněk množiny znaků. Tedy například
-zápis `[^5]` odpovídá jakémukoli znaku kromě pětky.
+Pokud je v hranatých závorkách jako první znak `^`, musí na daném místě být znak, ale nesmí to být žádný z těch uvedených v závorkách.
+Tedy například zápis `[^567]` odpovídá jakémukoli znaku kromě pětky, šestky a sedmičky.
 
 Další možnost označení skupiny představují kulaté závorky. Obsah takto označené skupiny je
 posléze možné získat samostatně jako výsledek vyhledávání přip. použít v kombinaci s kvantifikátory.
