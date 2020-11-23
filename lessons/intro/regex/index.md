@@ -103,11 +103,11 @@ Skupiny znaků v regulárních výrazech lze zadat několika způsoby:
 * rozsahem – např. `[a-z]`
 * kombinací – např. `[abcx-z1-3]`
 * sekvencí zastupující celou skupinu znaků – těch je hned několik:
-  * `\d` označuje číslice – ekvivalent pro `[0-9]`
+  * `\d` označuje číslice – ekvivalent pro `[0-9]` v ASCII a řadu dalších znaků z Unicode (např. `٩`)
   * `\D` označuje vše kromě číslic (množina obsahující všechny znaky kromě těch z předchozí skupiny)
   * `\s` označuje tzv. bílé znaky (whitespace) – mezeru, tabulátor atp.
   * `\S` označuje vše kromě bílých znaků (množina obsahující všechny znaky kromě těch z předchozí skupiny)
-  * `\w` označuje všechny alfanumerické znaky a podtržítko – ekvivalent s `[a-zA-Z0-9_]`
+  * `\w` označuje všechny alfanumerické znaky a podtržítko – ekvivalent s `[a-zA-Z0-9_]` z ASCII a obrovskou spoustu dalších znaků z Unicode včetně českých znaků s diakritikou
   * `\W` označuje vše kromě znaků z `\w` (množina obsahující všechny znaky kromě těch z předchozí skupiny)
 
 Pokud je v hranatých závorkách jako první znak `^`, musí na daném místě být znak, ale nesmí to být žádný z těch uvedených v závorkách.
