@@ -59,7 +59,7 @@ Kvantifikátory máme následující:
 * `*` znamená žádný a více výskytů
 * `+` znamená 1 a více výskytů
 * `{cislo}` znamená přesný počet výskytů
-* `{min, max}` znamená počet výskytů mezi horní a dolní mezí (včetně obou mezí samotných)
+* `{min,max}` znamená počet výskytů mezi horní a dolní mezí (včetně obou mezí samotných)
 
 #### Příklady
 
