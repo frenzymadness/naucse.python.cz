@@ -133,7 +133,7 @@ ze tří malých písmen bez diakritiky a dvou až čtyř číslic. Jeho validac
 <re.Match object; span=(0, 7), match='cap0096'>
 ```
 
-Na příkladu je vidět, že pokud `match` najde shodu, vrátí nám speciální objekt, v opačném případě vrátí `None`.
+Na příkladu je vidět, že pokud `match` najde shodu, vrátí speciální objekt, v opačném případě vrátí `None`.
 `Match` objekt má spoustu užitečných metod, které umožňují pracovat s nalezenou shodou. Mimo jiné můžeme s jeho pomocí získat
 jednotlivé skupiny označené v regulárním výrazu kulatými závorkami.
 
