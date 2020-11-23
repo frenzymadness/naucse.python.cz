@@ -72,8 +72,8 @@ Kvantifikátory máme následující:
 ### Zástupné znaky
 
 * `.` je zástupným znakem pro jakýkoli jiný znak
-* `^` označuje začátek řádku
-* `$` označuje konec řádku
+* `^` označuje začátek řetězce (případně řádku)
+* `$` označuje konec řetězce (případně řádku)
 
 #### Příklady
 
