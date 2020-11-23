@@ -201,6 +201,15 @@ odpovídající podřetězce pomocí `findall` nebo jednotlivé shody pomocí `f
 [<re.Match object; span=(15, 17), match='ny'>, <re.Match object; span=(24, 26), match='ty'>, <re.Match object; span=(33, 35), match='ny'>]
 ```
 
+Je třeba mít se na pozoru, pokud by se části našeho řetězce, které odpovídají regulárnímu výrazu, navzájem překrývaly.
+U funkce `search` to není problém, protože ta vrací jen první nalezený výskyt. Funkce `findall` a `finditer` však
+ignorují znaky, které už vyhodnotily jako součást předešlé shody při průchodu řetězcem zleva doprava.
+
+```pycon
+>>> re.findall(r".y", "yyy yyy")
+['yy', ' y', 'yy']
+```
+
 ### Nahrazování
 
 Nahrazení funkcí `sub` funguje velmi podobně jako řetězcová metoda `replace`. Samozřejmě s tím rozdílem, že nahrazená část musí
