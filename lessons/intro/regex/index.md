@@ -124,7 +124,7 @@ V různých organizacích mají uživatelská jména často přesně danou struk
 ze tří malých písmen bez diakritiky a dvou až čtyř číslic. Jeho validace by tedy mohla vypadat následovně:
 
 ```pycon
-import re
+>>> import re
 >>> re.match(r"[a-z]{3}[0-9]{2,4}", "cap096")
 <re.Match object; span=(0, 6), match='cap096'>
 >>> re.match(r"[a-z]{3}[0-9]{2,4}", "cape096")
