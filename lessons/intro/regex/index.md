@@ -48,7 +48,7 @@ Následující znaky mají při zápisu regulárních výrazů speciální význ
 > Výčet není kompletní, může se lišit v různých implementacích a programovacích jazycích,
 > může záviset na nastavení systému a užití znaků z Unicode.
 > Je to zkrátka komplexní technologie.
-> Pro co nejlepší přehled samozřejmě doporučujeme [dokumentaci](https://docs.python.org/3.9/library/re.html).
+> Pro co nejlepší přehled samozřejmě doporučujeme [dokumentaci](https://docs.python.org/3/library/re.html).
 
 ### Kvantifikátory
 
