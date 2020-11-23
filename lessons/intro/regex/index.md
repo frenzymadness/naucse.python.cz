@@ -201,7 +201,7 @@ V příkladu výše nahrazujeme slovo `and` obklopené jedním nebo více bílý
 
 ## Nastavení chování (flags)
 
-Jedním ze základních způsobů, jak ovlivnit chování funkcí v modulu `re` jsou tzv. flagy. Jedná se o různá nastavení,
+Jedním ze základních způsobů, jak ovlivnit chování funkcí v modulu `re`, jsou tzv. flagy. Jedná se o různá nastavení,
 která je možné v případě potřeby zapnout.
 
 * `re.DEBUG` zobrazí ladící hlášky týkající se zpracování regulárního výrazu
