@@ -40,6 +40,21 @@ SyntaxError: (unicode error) 'unicodeescape' codec can't decode bytes in positio
 hello\xworld
 ```
 
+Raw stringy jsou obyčejné řetězce jen s jinou formou zápisu. Regulární výrazy můžeme psát i jako obyčejné řetězce,
+ale budeme si pak muset sami pohlídat interpretaci speciálních sekvencí, což nám regulární výraz často zbytečně zkomplikuje
+řadou zdvojených lomítek.
+
+```pycon
+>>> print("\\x\\n\\x")
+\x\n\x
+>>> print(r"\x\n\x")
+\x\n\x
+>>> "\\x\\n\\x" == r"\x\n\x"
+True
+>>> type("\\x\\n\\x") == type(r"\x\n\x")
+True
+```
+
 ## Znaky se speciálním významem
 
 Následující znaky mají při zápisu regulárních výrazů speciální význam. To mimo jiné znamená, že pokud je chceme použít bez jejich speciálního významu, je nutné dát před znak `\` (tzv. je escapovat).
