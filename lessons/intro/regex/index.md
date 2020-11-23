@@ -207,7 +207,7 @@ která je možné v případě potřeby zapnout.
 * `re.DEBUG` zobrazí ladící hlášky týkající se zpracování regulárního výrazu
 * `re.IGNORECASE` (zkráceně `re.I`) způsobí, že regulární výraz nebude brát ohled na velikost písmen
 * `re.MULTILINE` (zkráceně `re.M`) umožní zpracování víceřádkových řetězců. `^` a `$` začnou označovat začátek a konec každého řádku místo začátku a konce celého řetězce.
-* `re.DOTALL` (zkráceně `re.S`) způsobí, že se tečka stane zástupným znakem i za nový řádek `\n`, což v základním nastavení není.
+* `re.DOTALL` (zkráceně `re.S`) způsobí, že se tečka stane zástupným znakem i za nový řádek `\n`, což v základním nastavení neplatí.
 * … a další k nalezení v dokumentaci.
 
 Nejlepší je předávat flagy jako pojmenovaný argument výše zmíněným funkcím. Vyhneme se tím chybám vzniklým kvůli různým počtům pozičních argumentů funkcí v modulu `re`.
