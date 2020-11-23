@@ -254,7 +254,7 @@ r"^\w+([\.-]?\w)+@\w+([\.]?\w)+(\.[a-zA-Z]{2,3})+$"
 Vezmeme to postupně:
 * `^` označení začátku hledaného řetězce
 * `\w+` 1 nebo více alfanumerických znaků
-* `([\.-]?\w)+` skupina alfanumerických znaků, která může začínat tečkou nebo pomlčkou a může se jednou nebo vícekrát opakovat
+* `([\.-]?\w)+` skupina alfanumerických znaků, která může začínat tečkou nebo spojovníkem a může se jednou nebo vícekrát opakovat
 * @ znak zavináče — nemá žádný speciální význam
 * `\w+` 1 nebo více alfanumerických znaků
 * `([\.]?\w)+` skupina alfanumerických znaků, která může začínat tečkou a může se jednou nebo vícekrát opakovat
