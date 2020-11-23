@@ -197,7 +197,7 @@ odpovídat regulárnímu výrazu.
 'Bread & butter and    ham  and  spam'
 ```
 
-V příkladu výše nahrazujeme slovo `and` obklopené jednou nebo více bílými znaky z obou stran znakem `&` s jednou mezerou na každé straně. Parametrem `count` si můžeme nastavit, kolikrát se má nahrazení provézt.
+V příkladu výše nahrazujeme slovo `and` obklopené jedním nebo více bílými znaky z obou stran znakem `&` s jednou mezerou na každé straně. Parametrem `count` si můžeme nastavit, kolikrát se má nahrazení provést.
 
 ## Nastavení chování (flags)
 
