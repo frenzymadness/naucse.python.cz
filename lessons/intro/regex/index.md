@@ -286,7 +286,16 @@ Vezmeme to postupně:
 * `(\.[a-zA-Z]{2,3})+` skupina obsahující dvě nebo tři malá/velká písmena anglické abecedy nebo číslice, která musí začínat tečkou a může se jednou nebo vícekrát opakovat
 * `$` tady by měl validovaný řetězec skončit a neměl by obsahovat nic navíc
 
-Pokud to ještě nedává smysl, jedná se o regulární výraz pro validaci emailových adres. Není ovšem bez chyby, protože nám nedovolí použít před zavináčem znak `+`, který je možnou validní součástí emailové adresy.
+Pokud to ještě nedává smysl, jedná se o regulární výraz pro validaci emailových adres. Není ovšem bez chyby, protože nám nedovolí použít před zavináčem znak `+`, který je možnou validní součástí emailové adresy. Napsat regulární výraz pro dokonalou validaci emailové adresy není možné. Více info poskytne [emailregex.com](https://emailregex.com/).
+
+Pokud by nás z emailu zajímala jen jedna jeho část (např. název schránky před zavináčem), můžeme si tu část označit
+kulatými závorkami a pak ji ve výsledné shodě po úspěné validaci najít jako jednu ze skupin – v tomto případě jako úplně první.
+
+```pycon
+>>> m = re.match(r"(^\w+([\.-]?\w)+)@\w+([\.]?\w)+(\.[a-zA-Z]{2,3})+$", "example.user@example.com")
+>>> m.groups()
+('example.user', 'r', 'e', '.com')
+```
 
 ## Online pomocníci
 
