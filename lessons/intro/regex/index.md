@@ -258,7 +258,7 @@ Vezmeme to postupně:
 * @ znak zavináče — nemá žádný speciální význam
 * `\w+` 1 nebo více alfanumerických znaků
 * `([\.]?\w)+` skupina alfanumerických znaků, která může začínat tečkou a může se jednou nebo vícekrát opakovat
-* `(\.[a-zA-Z]{2,3})+` skupina obsahující dvě nebo tři malá/velká písmena anglické abeceny nebo číslice, která musí začínat tečkou a může se jednou nebo vícekrát opakovat
+* `(\.[a-zA-Z]{2,3})+` skupina obsahující dvě nebo tři malá/velká písmena anglické abecedy nebo číslice, která musí začínat tečkou a může se jednou nebo vícekrát opakovat
 * `$` tady by měl validovaný řetězec skončit a neměl by obsahovat nic navíc
 
 Pokud to ještě nedává smysl, jedná se o regulární výraz pro validaci emailových adres. Není ovšem bez chyby, protože nám nedovolí použít před zavináčem znak `+`, který je možnou validní součástí emailové adresy.
