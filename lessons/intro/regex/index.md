@@ -121,7 +121,7 @@ Pojďme teď teorii přetavit v praxi a ukázat si použití regulárních výra
 Validace je jedno ze základních použití regulárních výrazů. V podstatě se ptáme, jestli řetězec odpovídá zadanému předpisu.
 
 V různých organizacích mají uživatelská jména často přesně danou strukturu. Na VŠB v Ostravě je uživatelské jméno studentů a zaměstnanců složeno
-ze tří písmen a dvou až čtyř číslic. Jeho validace by tedy mohla vypadat následovně:
+ze tří malých písmen bez diakritiky a dvou až čtyř číslic. Jeho validace by tedy mohla vypadat následovně:
 
 ```pycon
 import re
