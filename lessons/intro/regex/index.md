@@ -14,7 +14,7 @@ Obecně řečeno pochází regulární výrazy z oblasti teoretické informatiky
 
 Regulární výrazy se při práci s textem nejčastěji používají v těchto případech:
 * zjištění, zda nějaký text vyhovuje regulárnímu výrazu (validace vstupů)
-* hledání v textu — zjištění, kde se v textu nachází hledaný podřetězec
+* hledání v textu – zjištění, kde se v textu nachází hledaný podřetězec
 * záměna podřetězce v řetězci (najít a nahradit)
 * extrakce všech výskytů podřetězce
 
@@ -84,15 +84,15 @@ Kvantifikátory máme následující:
 
 Skupiny znaků v regulárních výrazech lze zadat několika způsoby:
 
-* výčtem — např. `[abc]`
-* rozsahem — např. `[a-z]`
-* kombinací — např. `[abcx-z1-3]`
-* sekvencí zastupující celou skupinu znaků — těch je hned několik:
-  * `\d` označuje číslice — ekvivalent pro `[0-9]`
+* výčtem – např. `[abc]`
+* rozsahem – např. `[a-z]`
+* kombinací – např. `[abcx-z1-3]`
+* sekvencí zastupující celou skupinu znaků – těch je hned několik:
+  * `\d` označuje číslice – ekvivalent pro `[0-9]`
   * `\D` označuje vše kromě číslic (množina obsahující všechny znaky kromě těch z předchozí skupiny)
-  * `\s` označuje tzv. bílé znaky (whitespace) — mezeru, tabulátor atp.
+  * `\s` označuje tzv. bílé znaky (whitespace) – mezeru, tabulátor atp.
   * `\S` označuje vše kromě bílých znaků (množina obsahující všechny znaky kromě těch z předchozí skupiny)
-  * `\w` označuje všechny alfanumerické znaky a podtržítko — ekvivalent s `[a-zA-Z0-9_]`
+  * `\w` označuje všechny alfanumerické znaky a podtržítko – ekvivalent s `[a-zA-Z0-9_]`
   * `\W` označuje vše kromě znaků z `\w` (množina obsahující všechny znaky kromě těch z předchozí skupiny)
 
 Pokud je v hranatých závorkách jako první znak `^`, znamená to doplněk množiny znaků. Tedy například
@@ -109,7 +109,7 @@ Snad posledním znakem často používaným v kombinaci se skupinou v kulatých 
 umožňuje od sebe oddělit několik regulárních výrazů nebo jejich částí, přičemž může platit kterýkoli z nich.
 
 Například zápisu `aaa|bbb` odpovídají řetězce `aaa` nebo `bbb`. Složitějšímu zápisu `([ab]{2}|z)k` odpovídají buď
-dva znaky z výčtu `[ab]` následované znakem `k` nebo znak `z` následovaný znakem `k` — celkový výčet je tedy následující
+dva znaky z výčtu `[ab]` následované znakem `k` nebo znak `z` následovaný znakem `k` – celkový výčet je tedy následující
 `aak`, `abk`, `bak`, `bbk` a `zk`.
 
 ## Použití regulárních výrazů
@@ -255,7 +255,7 @@ Vezmeme to postupně:
 * `^` označení začátku hledaného řetězce
 * `\w+` 1 nebo více alfanumerických znaků
 * `([\.-]?\w)+` skupina alfanumerických znaků, která může začínat tečkou nebo spojovníkem a může se jednou nebo vícekrát opakovat
-* `@` znak zavináče — nemá žádný speciální význam
+* `@` znak zavináče – nemá žádný speciální význam
 * `\w+` 1 nebo více alfanumerických znaků
 * `([\.]?\w)+` skupina alfanumerických znaků, která může začínat tečkou a může se jednou nebo vícekrát opakovat
 * `(\.[a-zA-Z]{2,3})+` skupina obsahující dvě nebo tři malá/velká písmena anglické abecedy nebo číslice, která musí začínat tečkou a může se jednou nebo vícekrát opakovat
