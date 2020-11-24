@@ -59,6 +59,9 @@ True
 
 Následující znaky mají při zápisu regulárních výrazů speciální význam. To mimo jiné znamená, že pokud je chceme použít bez jejich speciálního významu, je nutné dát před znak `\` (tzv. je escapovat).
 
+Například `.` je zástupným znakem pro jakýkoli jiný znak. Regulární výraz pro libovolné dva znaky, mezi kterými je tečka, by tedy
+vypadal následovně: `.\..`. Podobně `\\` znamená jedno zpětné lomítko.
+
 > [note]
 > Výčet není kompletní, může se lišit v různých implementacích a programovacích jazycích,
 > může záviset na nastavení systému a užití znaků z Unicode.
