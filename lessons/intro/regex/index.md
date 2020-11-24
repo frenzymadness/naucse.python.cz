@@ -96,7 +96,7 @@ Kvantifikátory máme následující:
 #### Příklady
 
 * Zápisu `a.c` odpovídá mnoho řetězců, např.: `a c`, `a!c`, `a/c`, `a0c`, `a1c`, `a2c`, `a3c`, `aAc`,`aBc`, `aCc`, `aac`, `abc`, `acc`, `azc`
-* Zápisu `^abc` bude odpovídat jen řetězec, který začíná na `abc`, tedy `abccc` ano, ale `abbcc` už ne
+* Zápisu `^abc.*` bude odpovídat jen řetězec, který začíná na `abc`, tedy `abccc` ano, ale `abbcc` už ne
 
 ### Skupiny znaků
 
